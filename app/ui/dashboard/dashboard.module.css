@@ -1,0 +1,34 @@
+.logo {
+  @apply m-6;
+}
+
+.container {
+  @apply flex;
+}
+
+.menu {
+  @apply bg-blueSecondary 
+    flex-1 
+    p-5
+    rounded-md;
+}
+
+.content {
+  @apply flex-1 p-8;
+}
+
+.cards {
+  @apply flex gap-8 justify-center;
+}
+
+.wrapper {
+  @apply flex  mt-8;
+}
+
+.main {
+  @apply 
+  flex 
+  flex-col
+  flex-1
+  gap-8;
+}

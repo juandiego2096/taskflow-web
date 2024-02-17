@@ -1,0 +1,39 @@
+.container{
+    @apply 
+    bg-blueSecondary p-6
+    rounded-md
+    flex
+    gap-4
+    shadow-md; 
+}
+
+.container:hover{
+    @apply bg-hover; 
+}
+
+.texts{
+    @apply flex flex-col gap-4;
+}
+
+
+.subtitle{
+    @apply text-bluePrimary
+    text-center
+    text-4xl
+    font-medium;
+}
+
+
+.positive{
+    @apply text-green
+    text-xs;
+}
+
+.negative{
+    @apply text-red
+    text-xs;
+}
+
+.detail{
+    @apply text-xs text-gray;
+}

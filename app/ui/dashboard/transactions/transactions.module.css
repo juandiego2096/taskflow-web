@@ -1,0 +1,36 @@
+.container {
+  @apply bg-blueSecondary
+  shadow-md
+  p-8
+  rounded-md;
+}
+
+.title {
+  @apply text-bluePrimary
+  text-lg 
+  font-medium;
+}
+
+.header {
+  @apply text-black;
+}
+
+
+.table td {
+  @apply p-1;
+}
+
+.button {
+  @apply text-bluePrimary
+  rounded-full
+  bg-transparent 
+  rounded-md
+  border-2
+  px-4 
+  border-bluePrimary
+  font-light;
+}
+
+.button:hover {
+  @apply bg-bluePrimary text-white;
+}

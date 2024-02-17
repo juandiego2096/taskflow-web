@@ -1,0 +1,15 @@
+.container {
+  @apply h-80
+  bg-blueSecondary
+  rounded-md
+  p-6
+  shadow-md;
+}
+
+.title {
+  @apply text-bluePrimary
+  text-lg
+  font-medium;
+}
+
+

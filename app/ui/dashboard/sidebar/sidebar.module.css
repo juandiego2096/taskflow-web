@@ -1,0 +1,10 @@
+.container{
+    @apply sticky top-2;
+}
+
+
+.cat{
+    @apply text-gray text-sm font-medium;
+   
+}
+

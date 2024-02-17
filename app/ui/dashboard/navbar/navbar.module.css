@@ -1,0 +1,19 @@
+.container{
+    @apply 
+    bg-blueSecondary
+    p-6
+    rounded-md
+    flex items-center
+    justify-between;
+}
+
+.title {
+    @apply
+    font-semibold
+    text-4xl
+    capitalize;
+}
+
+.user {
+    @apply font-medium;
+}
