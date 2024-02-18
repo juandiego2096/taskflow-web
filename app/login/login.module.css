@@ -2,3 +2,6 @@
     @apply bg-black;
 }
 
+.a{
+    @apply text-bluePrimary;
+}
