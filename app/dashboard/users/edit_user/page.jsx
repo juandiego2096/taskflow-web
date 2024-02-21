@@ -1,8 +1,7 @@
 "use client";
 
-import Link from "next/link";
-import { MdAdd, MdCheck } from "react-icons/md";
 import { useState } from "react";
+import { MdDeleteOutline } from "react-icons/md";
 
 const EditUserPage = () => {
   const [inputName, setInputName] = useState("");
@@ -48,7 +47,11 @@ const EditUserPage = () => {
 
   return (
     <>
-      <div className="flex items-center justify-end mt-4 ">
+      <div className="flex items-center justify-end mt-4 gap-5">
+      <button className="flex items-center justify-center w-1/2 px-5 py-2 text-sm text-gray-700 transition-colors duration-200 border text-red border-red rounded-lg gap-x-2 sm:w-auto hover:bg-red hover:text-white">
+            <MdDeleteOutline />
+            <span>Eliminar</span>
+          </button>
         <button
           onClick={handleSubmit}
           className="flex items-center justify-center w-1/2 px-5 py-2 text-sm text-white transition-colors duration-200 border bg-bluePrimary  border-bluePrimary rounded-lg  gap-x-2 sm:w-auto hover:bg-opacity-10 hover:text-bluePrimary"
