@@ -1,7 +1,10 @@
 "use client";
+
+import Link from "next/link";
+import { MdAdd, MdCheck } from "react-icons/md";
 import { useState } from "react";
 
-const EditCategoryPage = () => {
+const AddUserPage = () => {
   const [inputValue, setInputValue] = useState("");
   const [selectValue, setSelectValue] = useState("");
 
@@ -26,7 +29,7 @@ const EditCategoryPage = () => {
           onClick={handleSubmit}
           className="flex items-center justify-center w-1/2 px-5 py-2 text-sm text-white transition-colors duration-200 border bg-bluePrimary  border-bluePrimary rounded-lg  gap-x-2 sm:w-auto hover:bg-opacity-10 hover:text-bluePrimary"
         >
-          Finalizar
+          Crear
         </button>
       </div>
       <form onSubmit={handleSubmit}>
@@ -60,4 +63,4 @@ const EditCategoryPage = () => {
   );
 };
 
-export default EditCategoryPage;
+export default AddUserPage;
