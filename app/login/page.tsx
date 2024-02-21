@@ -3,7 +3,7 @@
 import React, { useState, FormEvent } from 'react';
 import Image from "next/image";
 import { useRouter } from 'next/navigation';
-import Cookies from "js-cookie";
+//import Cookies from "js-cookie";
 import Link from "next/link";
 import { useAuthContext } from '../../contexts/authContext';
 import loginService from "../../services/login.service";
@@ -88,7 +88,7 @@ const LoginPage = () => {
           </div>
           <div className="flex justify-center">
             <button
-              onClick={() => {}}
+              onClick={() => {handleForm}}
               className="w-60 bg-bluePrimary text-white py-2 px-4 my-8 rounded-lg"
             >
               Iniciar

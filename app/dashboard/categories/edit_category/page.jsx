@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { MdAdd } from "react-icons/md";
 import { useState } from "react";
-const NewCategoryPage = () => {
+const EditCategoryPage = () => {
   const [inputValue, setInputValue] = useState("");
   const [selectValue, setSelectValue] = useState("");
 
@@ -63,4 +63,4 @@ const NewCategoryPage = () => {
   );
 };
 
-export default NewCategoryPage;
+export default EditCategoryPage;
