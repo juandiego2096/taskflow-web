@@ -1,8 +1,6 @@
 "use client";
-
-import Link from "next/link";
-import { MdAdd } from "react-icons/md";
 import { useState } from "react";
+
 const EditCategoryPage = () => {
   const [inputValue, setInputValue] = useState("");
   const [selectValue, setSelectValue] = useState("");
@@ -17,7 +15,6 @@ const EditCategoryPage = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Aquí podrías enviar los datos del formulario a través de una función o componente
     console.log("Input Value:", inputValue);
     console.log("Select Value:", selectValue);
   };
@@ -29,7 +26,7 @@ const EditCategoryPage = () => {
           onClick={handleSubmit}
           className="flex items-center justify-center w-1/2 px-5 py-2 text-sm text-white transition-colors duration-200 border bg-bluePrimary  border-bluePrimary rounded-lg  gap-x-2 sm:w-auto hover:bg-opacity-10 hover:text-bluePrimary"
         >
-          Crear
+          Finalizar
         </button>
       </div>
       <form onSubmit={handleSubmit}>

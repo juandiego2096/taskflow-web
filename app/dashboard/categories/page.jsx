@@ -4,7 +4,7 @@ import { MdAdd, MdDownloading } from "react-icons/md";
 const CategoriesPage = () => {
   return (
     <>
-      <section className="container">
+   
         <div className="flex items-center justify-end mt-4 ">
           <Link href='/dashboard/categories/add_category' className="flex items-center justify-center w-1/2 px-5 py-2 text-sm text-white transition-colors duration-200 border bg-bluePrimary  border-bluePrimary rounded-lg  gap-x-2 sm:w-auto hover:bg-opacity-10 hover:text-bluePrimary">
           <MdAdd />
@@ -13,7 +13,7 @@ const CategoriesPage = () => {
         </div>
 
        
-        <div className="py-20 px-10 shadow-lg">
+        <div className="py-20 px-10 shadow-lg mt-10">
         <div className="relative flex items-center justify-between my-4 md:mt-0">
           <span className="absolute">
             <svg
@@ -152,7 +152,7 @@ const CategoriesPage = () => {
             </svg>
         </a>
     </div>
-      </section>
+
     </>
   );
 };
