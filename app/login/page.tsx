@@ -3,26 +3,21 @@
 import React, { useState, FormEvent } from 'react';
 import Image from "next/image";
 import { useRouter } from 'next/navigation';
-//import Cookies from "js-cookie";
-import Link from "next/link";
 import { useAuthContext } from '../../contexts/authContext';
-import loginService from "../../services/login.service";
 
 const LoginPage = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const router = useRouter();
-  const { login } = useAuthContext();
+  const { login, isLoggedIn } = useAuthContext();
+
+  if (isLoggedIn) {
+    return router.push("/dashboard");
+  }
 
   const handleForm = async (event: FormEvent) => {
     event.preventDefault();
-
-    const response = await loginService({ username, password })
-
-    const tokens = await response;
-    login({ token: tokens.token, refresh_token: null });
-
-    return router.push("/dashboard");
+    login(username, password);
   };
 
   return (

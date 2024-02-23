@@ -63,7 +63,7 @@ const menuItem = [
     list: [
       {
         title: "Cerrar sesión",
-        path: "/dashboard/logout",
+        path: "/logout",
         icon: <MdLogout />,
       },
     ],
