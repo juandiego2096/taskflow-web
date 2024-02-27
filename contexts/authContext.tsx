@@ -34,8 +34,8 @@ export default function AuthContextProvider({
 
     const login = useCallback(function (username: string, password: string) {
       loginService(username, password).then((data) => {
-        window.localStorage.setItem(AUTH_TOKENS_KEY, JSON.stringify(data));
-        setAuthToken(data);
+        window.localStorage.setItem(AUTH_TOKENS_KEY, JSON.stringify(data.token));
+        setAuthToken(data.token);
       }).catch((err) => {
         console.log(err);
       });

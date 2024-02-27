@@ -10,9 +10,11 @@ export const httpClientPlugin = {
       headers: requestHeaders,
     })
       .then((response) => {
+        if (!response) return null;
         if(!response.ok) {
           if(response.status === 401) {
             console.log('No autorizado');
+            return null;
           }
           else console.log(response.status);
         }
